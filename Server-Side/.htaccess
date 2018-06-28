@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !index.php
+RewriteCond %{REQUEST_URI} !demopush.php
+RewriteCond %{REQUEST_URI} !checkExpire.php
+RewriteCond %{REQUEST_URI} !parser.php
+RewriteCond %{REQUEST_URI} !admin
+RewriteRule    ^([^\.]+).php    index.php?mode=$1 [NC,L]

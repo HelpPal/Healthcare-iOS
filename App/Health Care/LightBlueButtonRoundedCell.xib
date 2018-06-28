@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="LightBlueButtonRoundedCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="LightBlueButtonRoundedCell" rowHeight="98" id="R6b-bW-R6V" customClass="LightBlueButtonRoundedCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R6b-bW-R6V" id="sYQ-lQ-QrT">
+                <frame key="frameInset" width="375" height="51"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="IUM-KT-mUW" customClass="LightBlueButton">
+                        <color key="backgroundColor" red="0.040782205760478973" green="0.49217009544372559" blue="0.99092131853103638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
+                        <state key="normal" title="button"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="IUM-KT-mUW" secondAttribute="bottom" id="Ckx-w4-a7E"/>
+                    <constraint firstItem="IUM-KT-mUW" firstAttribute="leading" secondItem="sYQ-lQ-QrT" secondAttribute="leading" constant="100" id="jIC-T3-Lrk"/>
+                    <constraint firstAttribute="trailing" secondItem="IUM-KT-mUW" secondAttribute="trailing" constant="100" id="oUy-kO-PTS"/>
+                    <constraint firstItem="IUM-KT-mUW" firstAttribute="top" secondItem="sYQ-lQ-QrT" secondAttribute="top" id="rMB-Tt-x6c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="blueButton" destination="IUM-KT-mUW" id="CIi-xe-Nm7"/>
+                <outlet property="leftPadding" destination="jIC-T3-Lrk" id="SdR-D4-gC2"/>
+                <outlet property="rightPadding" destination="oUy-kO-PTS" id="SPe-FL-nYD"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="-22"/>
+        </tableViewCell>
+    </objects>
+</document>

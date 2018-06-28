@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MessagesConversationUserCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessagesConversationUserCell" id="R6b-bW-R6V" customClass="MessagesConversationUserCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R6b-bW-R6V" id="sYQ-lQ-QrT">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GJf-6x-VBP">
+                        <rect key="frame" x="15" y="0.0" width="285" height="102"/>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.98431372549019602" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RC-I1-cDZ">
+                        <rect key="frame" x="25" y="5" width="265" height="92"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="265" id="Uo4-Zg-N5M"/>
+                        </constraints>
+                        <string key="text">[self updateLabelPreferredMaxLayoutWidthToCurrentWidth:self.label1];
+    [self updateLabelPreferredMaxLayoutWidthToCurrentWidth:self.label2];
+    [self updateLabelPreferredMaxLayoutWidthToCurrentWidth:self.label3];</string>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8h-Al-pOR">
+                        <rect key="frame" x="305" y="44" width="60" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="k3W-3G-7Z7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                        <color key="textColor" red="0.58431372550000005" green="0.76470588240000004" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GJf-6x-VBP" firstAttribute="top" secondItem="sYQ-lQ-QrT" secondAttribute="top" id="2LI-hg-xfx"/>
+                    <constraint firstItem="3RC-I1-cDZ" firstAttribute="top" secondItem="sYQ-lQ-QrT" secondAttribute="top" constant="5" id="4cN-tP-Hyx"/>
+                    <constraint firstItem="s8h-Al-pOR" firstAttribute="leading" secondItem="GJf-6x-VBP" secondAttribute="trailing" constant="5" id="B1g-RS-RPp"/>
+                    <constraint firstItem="GJf-6x-VBP" firstAttribute="leading" secondItem="sYQ-lQ-QrT" secondAttribute="leading" constant="15" id="CIf-78-Fq2"/>
+                    <constraint firstAttribute="bottom" secondItem="3RC-I1-cDZ" secondAttribute="bottom" constant="5" id="kuJ-dn-pEl"/>
+                    <constraint firstAttribute="bottom" secondItem="GJf-6x-VBP" secondAttribute="bottom" id="rip-Eq-LLp"/>
+                    <constraint firstItem="s8h-Al-pOR" firstAttribute="leading" secondItem="3RC-I1-cDZ" secondAttribute="trailing" constant="15" id="sSq-BM-h6L"/>
+                    <constraint firstItem="3RC-I1-cDZ" firstAttribute="leading" secondItem="sYQ-lQ-QrT" secondAttribute="leading" constant="25" id="uRm-lG-q8t"/>
+                    <constraint firstItem="3RC-I1-cDZ" firstAttribute="centerY" secondItem="s8h-Al-pOR" secondAttribute="centerY" id="w09-hj-5WK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="borderImage" destination="GJf-6x-VBP" id="eBT-Zh-Pa8"/>
+                <outlet property="messageLabel" destination="3RC-I1-cDZ" id="qN1-u2-I39"/>
+                <outlet property="messageLabelWidth" destination="Uo4-Zg-N5M" id="kHA-MF-ipn"/>
+                <outlet property="timeLabel" destination="s8h-Al-pOR" id="fPh-T7-SBx"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="-38"/>
+        </tableViewCell>
+    </objects>
+</document>

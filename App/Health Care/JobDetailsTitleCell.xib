@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="JobDetailsTitleCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="JobDetailsTitleCell" rowHeight="161" id="R6b-bW-R6V" customClass="JobDetailsTitleCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R6b-bW-R6V" id="sYQ-lQ-QrT">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Certified Nursing Assistant - " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPI-BC-g56">
+                        <rect key="frame" x="60" y="0.0" width="255" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="opV-7i-byB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hourly - Entry Level ($) - Est. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDy-0P-6We">
+                        <rect key="frame" x="60" y="38" width="255" height="22"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
+                        <color key="textColor" red="0.58431372549019611" green="0.59607843137254901" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBt-kN-Hho">
+                        <rect key="frame" x="171" y="66" width="33" height="19"/>
+                        <color key="backgroundColor" red="0.58431372549019611" green="0.76470588235294112" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                        <color key="textColor" red="0.97254901959999995" green="0.98431372549999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vor-4A-JTu" customClass="HCSStarRatingView">
+                        <rect key="frame" x="88" y="92" width="200" height="38"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="allowsHalfStars" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="accurateHalfStars" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="applyUserRating:" destination="R6b-bW-R6V" eventType="valueChanged" id="0O2-pZ-Nhf"/>
+                        </connections>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="VDy-0P-6We" firstAttribute="centerX" secondItem="oBt-kN-Hho" secondAttribute="centerX" id="3Jn-rc-nlP"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Vor-4A-JTu" secondAttribute="bottom" constant="1.5" id="CSP-bq-UlC"/>
+                    <constraint firstItem="oBt-kN-Hho" firstAttribute="centerX" secondItem="Vor-4A-JTu" secondAttribute="centerX" id="MDg-1x-DsJ"/>
+                    <constraint firstItem="HPI-BC-g56" firstAttribute="centerX" secondItem="sYQ-lQ-QrT" secondAttribute="centerX" id="QvT-hw-UOH"/>
+                    <constraint firstItem="HPI-BC-g56" firstAttribute="leading" secondItem="sYQ-lQ-QrT" secondAttribute="leadingMargin" constant="52" id="X9o-oO-XF4"/>
+                    <constraint firstItem="VDy-0P-6We" firstAttribute="top" secondItem="HPI-BC-g56" secondAttribute="bottom" id="ZlG-Cp-3Hf"/>
+                    <constraint firstItem="HPI-BC-g56" firstAttribute="leading" secondItem="VDy-0P-6We" secondAttribute="leading" id="iLv-T9-iF5"/>
+                    <constraint firstItem="Vor-4A-JTu" firstAttribute="leading" secondItem="sYQ-lQ-QrT" secondAttribute="leadingMargin" constant="80" id="iYt-EM-dxV"/>
+                    <constraint firstItem="HPI-BC-g56" firstAttribute="top" secondItem="sYQ-lQ-QrT" secondAttribute="top" id="ky0-FA-hZV"/>
+                    <constraint firstItem="oBt-kN-Hho" firstAttribute="top" secondItem="VDy-0P-6We" secondAttribute="bottom" constant="6" id="lfH-dB-a7t"/>
+                    <constraint firstItem="HPI-BC-g56" firstAttribute="trailing" secondItem="VDy-0P-6We" secondAttribute="trailing" id="wK3-wl-9dn"/>
+                    <constraint firstItem="Vor-4A-JTu" firstAttribute="top" secondItem="oBt-kN-Hho" secondAttribute="bottom" constant="7" id="yRZ-9A-aVg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.98431372549019602" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="addressLabel" destination="VDy-0P-6We" id="gX3-QO-CEh"/>
+                <outlet property="distanceLabel" destination="oBt-kN-Hho" id="di3-Gy-D1c"/>
+                <outlet property="starRatingView" destination="Vor-4A-JTu" id="SAP-Nw-Ahg"/>
+                <outlet property="titleLabel" destination="HPI-BC-g56" id="NmO-jx-7WJ"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="-50"/>
+        </tableViewCell>
+    </objects>
+</document>

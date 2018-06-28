@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TermsAndConditionsCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="TermsAndConditionsCell" rowHeight="145" id="R6b-bW-R6V" customClass="TermsAndConditionsCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R6b-bW-R6V" id="sYQ-lQ-QrT">
+                <frame key="frameInset" width="375" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have read the agree with the price and" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gk7-08-VPb">
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.58431372550000005" green="0.76470588240000004" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wld-nC-m7j">
+                        <frame key="frameInset" width="50"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkBoxImage0" translatesAutoresizingMaskIntoConstraints="NO" id="ywO-N0-plY">
+                        <frame key="frameInset" minX="20" minY="50.00%" width="30" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82b-vQ-gt1">
+                        <frame key="frameInset" minX="65" height="25" maxX="10"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Terms and Conditions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rox-oE-Q7m">
+                        <frame key="frameInset" minX="65" height="21" maxX="10" maxY="4"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.037778355180000001" green="0.48077875380000001" blue="0.96704989669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gk7-08-VPb" firstAttribute="top" secondItem="sYQ-lQ-QrT" secondAttribute="top" id="3nM-Ug-LUj"/>
+                    <constraint firstItem="gk7-08-VPb" firstAttribute="leading" secondItem="sYQ-lQ-QrT" secondAttribute="leading" constant="65" id="CM7-SC-TSi"/>
+                    <constraint firstAttribute="trailing" secondItem="gk7-08-VPb" secondAttribute="trailing" constant="10" id="nN8-fn-ek7"/>
+                    <constraint firstAttribute="bottom" secondItem="gk7-08-VPb" secondAttribute="bottom" constant="25" id="wK3-76-jRN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="acceptButton" destination="Wld-nC-m7j" id="7f6-tC-ABd"/>
+                <outlet property="checkBoxImage" destination="ywO-N0-plY" id="zc9-ej-B1C"/>
+                <outlet property="termsAndCondButton" destination="82b-vQ-gt1" id="NO5-lr-NgJ"/>
+                <outlet property="termsAndCondLabel" destination="Rox-oE-Q7m" id="m2k-gd-ahi"/>
+                <outlet property="titleAndSubtitleLabel" destination="gk7-08-VPb" id="GWZ-zj-kvc"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="-45.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkBoxImage0" width="31" height="28"/>
+    </resources>
+</document>

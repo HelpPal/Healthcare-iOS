@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ReportButtonCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReportButtonCell" rowHeight="42" id="R6b-bW-R6V" customClass="ReportButtonCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R6b-bW-R6V" id="sYQ-lQ-QrT">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="41.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUM-KT-mUW">
+                        <rect key="frame" x="170" y="0.0" width="35" height="41.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" priority="250" constant="100" id="eLd-1L-iUj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                        <state key="normal" title="button">
+                            <color key="titleColor" red="0.13326117396354675" green="0.52523016929626465" blue="0.99045151472091675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flagImage" translatesAutoresizingMaskIntoConstraints="NO" id="xU8-yL-spa">
+                        <rect key="frame" x="150" y="14" width="10" height="14"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="IUM-KT-mUW" secondAttribute="bottom" id="Ckx-w4-a7E"/>
+                    <constraint firstItem="IUM-KT-mUW" firstAttribute="leading" secondItem="xU8-yL-spa" secondAttribute="trailing" constant="10" id="bI0-93-2dA"/>
+                    <constraint firstItem="IUM-KT-mUW" firstAttribute="centerX" secondItem="sYQ-lQ-QrT" secondAttribute="centerX" id="eIv-XL-BiC"/>
+                    <constraint firstItem="xU8-yL-spa" firstAttribute="centerY" secondItem="IUM-KT-mUW" secondAttribute="centerY" id="mn1-Ys-HVF"/>
+                    <constraint firstItem="IUM-KT-mUW" firstAttribute="top" secondItem="sYQ-lQ-QrT" secondAttribute="top" id="rMB-Tt-x6c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="blueButton" destination="IUM-KT-mUW" id="CIi-xe-Nm7"/>
+                <outlet property="buttonConstraintWidth" destination="eLd-1L-iUj" id="1jX-x4-yqu"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="-50"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="flagImage" width="10" height="14"/>
+    </resources>
+</document>

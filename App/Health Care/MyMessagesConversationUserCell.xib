@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MyMessagesConversationUserCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyMessagesConversationUserCell" id="R6b-bW-R6V" customClass="MyMessagesConversationUserCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R6b-bW-R6V" id="sYQ-lQ-QrT">
+                <frame key="frameInset" width="375" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GJf-6x-VBP">
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.98431372549019602" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RC-I1-cDZ">
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="265" id="Uo4-Zg-N5M"/>
+                        </constraints>
+                        <string key="text">[self updateLabelPreferredMaxLayoutWidthToCurrentWidth:self.label1];
+    [self updateLabelPreferredMaxLayoutWidthToCurrentWidth:self.label2];
+    [self updateLabelPreferredMaxLayoutWidthToCurrentWidth:self.label3];</string>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                        <color key="textColor" red="0.10588235294117647" green="0.50980392156862742" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqo-BI-cPC">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="opi-4f-JHD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                        <color key="textColor" red="0.58431372550000005" green="0.76470588240000004" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GJf-6x-VBP" firstAttribute="top" secondItem="sYQ-lQ-QrT" secondAttribute="top" id="2LI-hg-xfx"/>
+                    <constraint firstItem="3RC-I1-cDZ" firstAttribute="top" secondItem="sYQ-lQ-QrT" secondAttribute="top" constant="5" id="4cN-tP-Hyx"/>
+                    <constraint firstItem="dqo-BI-cPC" firstAttribute="centerY" secondItem="3RC-I1-cDZ" secondAttribute="centerY" id="8g9-AB-n4i"/>
+                    <constraint firstItem="3RC-I1-cDZ" firstAttribute="leading" secondItem="dqo-BI-cPC" secondAttribute="trailing" constant="15" id="fOW-C9-kUi"/>
+                    <constraint firstAttribute="trailing" secondItem="3RC-I1-cDZ" secondAttribute="trailing" constant="25" id="hfp-Ag-AYL"/>
+                    <constraint firstAttribute="bottom" secondItem="3RC-I1-cDZ" secondAttribute="bottom" constant="5" id="kuJ-dn-pEl"/>
+                    <constraint firstItem="GJf-6x-VBP" firstAttribute="leading" secondItem="dqo-BI-cPC" secondAttribute="trailing" constant="5" id="lMk-7E-uZa"/>
+                    <constraint firstAttribute="trailing" secondItem="GJf-6x-VBP" secondAttribute="trailing" constant="15" id="nA6-iP-vc9"/>
+                    <constraint firstAttribute="bottom" secondItem="GJf-6x-VBP" secondAttribute="bottom" id="rip-Eq-LLp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="borderImage" destination="GJf-6x-VBP" id="eBT-Zh-Pa8"/>
+                <outlet property="messageLabel" destination="3RC-I1-cDZ" id="qN1-u2-I39"/>
+                <outlet property="messageLabelWidth" destination="Uo4-Zg-N5M" id="kHA-MF-ipn"/>
+                <outlet property="timeLabel" destination="dqo-BI-cPC" id="gsH-QX-PWj"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="-38"/>
+        </tableViewCell>
+    </objects>
+</document>

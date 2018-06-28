@@ -1,0 +1,373 @@
+body {
+	background-color: white;
+	font-family: sans-serif;
+	margin:20px;
+	padding:0px;
+}
+
+a {
+	color:#1B82FA;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+/*Inputs*/
+
+input {
+	background-color: #E1EFFA;
+	border:none;
+	padding:15px 20px;
+	font-size:16px;
+	display: block;
+	box-sizing: border-box;
+	margin:10px 0px;
+	border-radius: 15px;
+	color:#1B82FA;
+	font-weight: 600;
+	outline: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #E1EFFA inset !important;
+	-webkit-text-fill-color:#1B82FA !important;
+}
+
+
+input[type=submit] {
+	width:auto;
+	background-color: #1B82FA;
+	color:white;
+	border:3px solid #1B82FA;
+	cursor:pointer;
+}
+
+input[type=submit]:hover {
+	background-color: white;
+	color:#1B82FA;
+}
+
+.button {
+	display: block;
+	width:auto;
+	background-color: #1B82FA;
+	color:white;
+	border:3px solid #1B82FA;
+	cursor:pointer;
+	padding:15px 20px;
+	border-radius: 15px;
+	display: table;
+}
+
+.button:hover {
+	text-decoration: none;
+	background-color: white;
+	color:#1B82FA;
+}
+
+
+
+
+
+
+
+
+/*Login*/
+
+#login form div {
+	position: relative;
+}
+
+.logotype {
+	width:300px;
+	height:44px;
+	background-image: url("img/logo.png");
+	background-size: 100% 100%;
+	margin:auto;
+	margin-bottom:30px;
+}
+
+
+#login {
+	width: 300px;	
+	margin:auto;
+	margin-top:20%;
+}
+
+#login input[type=text], 
+#login input[type=password] {
+	width:100%;
+	padding:15px 20px 15px 50px;
+}
+
+#login input[type=submit] {
+	margin:auto;
+}
+
+#login label {
+	width:25px;
+	height:29px;
+	background-size: 100% 100%;
+	display: block;
+	position: absolute;
+	top:9px;
+	left:16px;
+	margin:0px;
+
+}
+
+#login label#login {
+	background-image: url('img/icon_login.png');
+}
+
+#login label#pass {
+	background-image: url('img/icon_pass.png');
+}
+
+
+
+
+
+
+
+
+
+/*Header*/
+
+.header .logotype {
+	margin:0px;
+	display:inline-block;
+}
+
+.header .menu {
+	padding-top:10px;
+	float:right;
+}
+
+.header .menu a {
+	text-transform: uppercase;
+	font-weight: 600;
+	display:block;
+	display: inline-block;
+	padding:7px 14px;
+	font-size:14px;
+}
+
+.header .menu a:hover {
+	background-color: #1B82FA;
+	color:white;
+	border-radius:99px;
+	text-decoration:none !important;
+}
+
+
+
+
+
+
+
+
+
+/*Main*/
+
+.statistics {
+	margin-top:100px;
+	font-size:0px;
+	color:#1B82FA;
+}
+
+.statistics .statistic {
+	font-size:14px;
+	width:33.33333%;
+	display:inline-block;
+	text-align: center;
+}
+
+.statistics .statistic .counter {
+	font-size:100px;
+}
+
+
+
+
+
+
+
+
+/*Table*/
+
+table, tbody {
+	margin:20px 0px;
+	width:100%;
+	border-collapse: collapse;
+}
+
+table tr:first-child td {
+	background-color: #E1EFFA;
+	color:#1B82FA;
+	font-weight: 600;
+}
+
+table tr td {
+	padding:10px;
+}
+
+table tr td.small {
+	width:50px !important;
+}
+
+table tr td.medium {
+	width:150px !important;
+}
+
+table tr td.large {
+	width:200px;
+}
+
+table tr:hover {
+	background-color: #F8FBFE;
+}
+
+.user_avatar {
+	width:100px;
+	height:100px;
+	display:block;
+	background-size: cover;
+	background-position: center center;
+	background-color: #E1EFFA;
+	border-radius: 99999px;
+}
+
+tr.blocked {
+	background-color: #FFD1D1 !important;
+}
+
+tr.resolved {
+	background-color: #E1EFFA !important;
+}
+
+span.skill {
+	padding:5px 8px;
+	background-color: #1B82FA;
+	color:white;
+	margin:2px 3px;
+	border-radius:99px;
+	display:inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
